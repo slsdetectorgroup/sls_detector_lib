@@ -1,5 +1,5 @@
 package:
-  name: sls_detector_software
+  name: sls_detector_lib
   version: "3.1.1"
 
 
@@ -15,9 +15,6 @@ requirements:
     - gcc
     - cmake
     - libgcc
-    - qwt 6.1.2
-    - qt 4.8.7
-    - libpng 1.6.34
     - pyzmq
     
   run:
@@ -25,9 +22,6 @@ requirements:
     - cmake
     - numpy
     - libgcc
-    - qwt 6.1.2
-    - qt 4.8.7
-    - libpng 1.6.34
     - pyzmq
 
 about:
