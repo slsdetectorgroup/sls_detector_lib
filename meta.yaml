@@ -14,14 +14,13 @@ build:
 
 requirements:
   build:
-    - gcc
+    - gcc_linux-64
+    - libgcc
     - cmake
     - libgcc
     - pyzmq
     
   run:
-    - gcc
-    - cmake
     - numpy
     - libgcc
     - pyzmq
