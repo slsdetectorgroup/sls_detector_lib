@@ -1,0 +1,35 @@
+package:
+  name: sls_detector_software
+  version: "3.1.1"
+
+
+source:
+  git_rev: 3.1.1
+  git_url: https://github.com/slsdetectorgroup/slsDetectorPackage.git
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - gcc
+    - cmake
+    - libgcc
+    - qwt 6.1.2
+    - qt 4.8.7
+    - libpng 1.6.34
+    - pyzmq
+    
+  run:
+    - gcc
+    - cmake
+    - numpy
+    - libgcc
+    - qwt 6.1.2
+    - qt 4.8.7
+    - libpng 1.6.34
+    - pyzmq
+
+about:
+  home: no
+  license: GPL2
