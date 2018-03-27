@@ -9,6 +9,8 @@ source:
 
 build:
   number: 0
+  run_exports:
+   - libstdc++  {{ pin_compatible('g++', 'x') }}
 
 requirements:
   build:
