@@ -9,21 +9,16 @@ source:
 
 build:
   number: 0
-  run_exports:
-   - libstdc++  {{ pin_compatible('g++', 'x') }}
 
 requirements:
   build:
     - gcc_linux-64
+    - gxx_linux-64
     - libstdcxx-ng
-    - libgcc
-    - cmake
-    - libgcc
     - pyzmq
     
   run:
     - numpy
-    - libgcc
     - libstdcxx-ng
     - pyzmq
 
