@@ -16,7 +16,7 @@ build:
 requirements:
   build:
     - cmake
-    # - libpng 1.6.34
+    - libpng
     - pyzmq
     - zlib
     - {{ compiler('c') }}        # [not win]
@@ -46,7 +46,7 @@ requirements:
   host:
     - zlib
     # - libxcb
-    # - libpng
+    - libpng
     # - xorg-libsm
     # - xorg-libice
     # - sls_detector_lib
