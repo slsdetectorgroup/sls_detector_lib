@@ -54,14 +54,7 @@ requirements:
     # - qt 4.*
 
   run:
-    # - gcc
-    # - cmake
-    # - libgcc
-    # - libcxx
-    # - qwt 6.*
-    # - qt 4.*
-    # - libpng 1.6.34
-    # - pyzmq
+    - pyzmq
     # - numpy
     - libstdcxx-ng
     - libgcc-ng
