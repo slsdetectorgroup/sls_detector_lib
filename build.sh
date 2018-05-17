@@ -2,6 +2,7 @@ mkdir build
 cd build
 echo $PREFIX
 cmake .. \
+      -DCMAKE_PREFIX_PATH=$CONDA_PREFIX \
       -DCMAKE_INSTALL_PREFIX=$PREFIX \
       -DUSE_TEXTCLIENT=ON \
       -DUSE_RECEIVER=ON \

@@ -14,12 +14,14 @@ requirements:
   build:
     - gcc_linux-64
     - gxx_linux-64
+    - libgcc-ng 
     - libstdcxx-ng
     - pyzmq
     
   run:
     - numpy
     - libstdcxx-ng
+    - libgcc-ng 
     - pyzmq
 
 about:
