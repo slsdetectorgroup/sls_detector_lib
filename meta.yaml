@@ -15,53 +15,24 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}       
+    - {{ compiler('cxx') }}  
     - cmake
     - libpng
     - pyzmq
     - zlib
-    - {{ compiler('c') }}        # [not win]
-    - {{ compiler('cxx') }}      # [not win]
-    # - {{ cdt('xorg-x11-proto-devel') }}  # [linux]
-    # # - {{ cdt('mesa-libgl-devel') }}      # [linux]
-    # - {{ cdt('libx11-devel') }}          # [linux]
-    # - {{ cdt('libxext-devel') }}         # [linux]
-    # - {{ cdt('libxrender-devel') }}      # [linux]
-    # - {{ cdt('mesa-libgl-devel') }}      # [linux]
-    # - {{ cdt('mesa-libegl-devel') }}     # [linux]
-    # - {{ cdt('mesa-dri-drivers') }}      # [linux]
-    # - {{ cdt('libxau-devel') }}          # [linux]
-    # - {{ cdt('libdrm-devel') }}          # [linux]
-    # - {{ cdt('libpng-devel') }}          # [linux]
-    # - {{ cdt('libxcomposite-devel') }}   # [linux]
-    # - {{ cdt('libxcursor-devel') }}      # [linux]
-    # - {{ cdt('libxi-devel') }}           # [linux]
-    # - {{ cdt('libxrandr-devel') }}       # [linux]
-    # - {{ cdt('libxscrnsaver-devel') }}   # [linux]
-    # - {{ cdt('libxtst-devel') }}         # [linux]
-    # - {{ cdt('libselinux-devel') }}      # [linux]
-    # - {{ cdt('libxdamage') }}            # [linux]
-    # - {{ cdt('libxfixes') }}             # [linux]
-    # - {{ cdt('libxxf86vm') }}            # [linux]
-    # - sls_detector_lib
-  host:
+  
+    host:
     - zlib
-    # - libxcb
     - libpng
-    # - xorg-libsm
-    # - xorg-libice
-    # - sls_detector_lib
-    # - qwt 6.*
-    # - qt 4.*
+
 
   run:
     - pyzmq
-    # - numpy
+    - libpng
     - libstdcxx-ng
     - libgcc-ng
-    # - pyzmq
-    # - qwt 6.*
-    # - qt 4.* 
-    # - sls_detector_lib 
+
 
 about:
   home: no
