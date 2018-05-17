@@ -1,27 +1,77 @@
 package:
   name: sls_detector_lib
-  version: "3.1.1"
+  version: "developer"
 
 
 source:
-  git_rev: 3.1.1
+  git_rev: developer
   git_url: https://github.com/slsdetectorgroup/slsDetectorPackage.git
 
 build:
   number: 0
+  rpaths:
+    - lib/
+    - lib/R/lib/
 
 requirements:
   build:
-    - gcc_linux-64
-    - gxx_linux-64
-    - libstdcxx-ng
+    - cmake
+    # - qwt 6.1.2
+    # - libpng 1.6.34
     - pyzmq
-    
+    - zlib
+    - {{ compiler('c') }}        # [not win]
+    - {{ compiler('cxx') }}      # [not win]
+    # - {{ cdt('xorg-x11-proto-devel') }}  # [linux]
+    # # - {{ cdt('mesa-libgl-devel') }}      # [linux]
+    # - {{ cdt('libx11-devel') }}          # [linux]
+    # - {{ cdt('libxext-devel') }}         # [linux]
+    # - {{ cdt('libxrender-devel') }}      # [linux]
+    # - {{ cdt('mesa-libgl-devel') }}      # [linux]
+    # - {{ cdt('mesa-libegl-devel') }}     # [linux]
+    # - {{ cdt('mesa-dri-drivers') }}      # [linux]
+    # - {{ cdt('libxau-devel') }}          # [linux]
+    # - {{ cdt('libdrm-devel') }}          # [linux]
+    # - {{ cdt('libpng-devel') }}          # [linux]
+    # - {{ cdt('libxcomposite-devel') }}   # [linux]
+    # - {{ cdt('libxcursor-devel') }}      # [linux]
+    # - {{ cdt('libxi-devel') }}           # [linux]
+    # - {{ cdt('libxrandr-devel') }}       # [linux]
+    # - {{ cdt('libxscrnsaver-devel') }}   # [linux]
+    # - {{ cdt('libxtst-devel') }}         # [linux]
+    # - {{ cdt('libselinux-devel') }}      # [linux]
+    # - {{ cdt('libxdamage') }}            # [linux]
+    # - {{ cdt('libxfixes') }}             # [linux]
+    # - {{ cdt('libxxf86vm') }}            # [linux]
+    # - sls_detector_lib
+  host:
+    - zlib
+    # - libxcb
+    # - libpng
+    # - xorg-libsm
+    # - xorg-libice
+    # - sls_detector_lib
+    # - qwt 6.*
+    # - qt 4.*
+
   run:
-    - numpy
+    # - gcc
+    # - cmake
+    # - libgcc
+    # - libcxx
+    # - qwt 6.*
+    # - qt 4.*
+    # - libpng 1.6.34
+    # - pyzmq
+    # - numpy
     - libstdcxx-ng
-    - pyzmq
+    - libgcc-ng
+    # - pyzmq
+    # - qwt 6.*
+    # - qt 4.* 
+    # - sls_detector_lib 
 
 about:
   home: no
   license: GPL2
+
