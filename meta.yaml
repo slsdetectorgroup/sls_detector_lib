@@ -14,30 +14,22 @@ build:
 
 requirements:
   build:
-    # - gcc_linux-64
-    # - gxx_linux-64
-    # - libstdcxx-ng
-    # - libgcc-ng
     - cmake
     - gcc
-    - libgcc
+    - libstdcxx-ng
+    - libgcc-ng
     - libpng >=1.6.32,<1.6.35
     # - pyzmq
     # - zlib
 
-  
-  # host:
-  #   - zlib
-  #   - libpng >=1.6.32,<1.6.35
 
 
   run:
     - pyzmq
     - libpng >=1.6.32,<1.6.35
-    - libgcc
-    # - libstdcxx-ng
-    # - libgcc-ng
-    # - zlib
+    - libstdcxx-ng
+    - libgcc-ng
+
 
 
 about:
