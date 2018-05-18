@@ -11,28 +11,33 @@ build:
   number: 0
   rpaths:
     - lib/
-    - lib/R/lib/
 
 requirements:
   build:
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
+    # - gcc_linux-64
+    # - gxx_linux-64
+    # - libstdcxx-ng
+    # - libgcc-ng
     - cmake
-    - libpng
-    - pyzmq
-    - zlib
+    - gcc
+    - libgcc
+    - libpng >=1.6.32,<1.6.35
+    # - pyzmq
+    # - zlib
 
   
-  host:
-    - zlib
-    - libpng
+  # host:
+  #   - zlib
+  #   - libpng >=1.6.32,<1.6.35
 
 
   run:
     - pyzmq
-    - libpng
-    - libstdcxx-ng
-    - libgcc-ng
+    - libpng >=1.6.32,<1.6.35
+    - libgcc
+    # - libstdcxx-ng
+    # - libgcc-ng
+    # - zlib
 
 
 about:
