@@ -1,6 +1,6 @@
 package:
   name: sls_detector_lib
-  version: "developer"
+  version: "compiler"
 
 
 source:
@@ -15,7 +15,7 @@ build:
 requirements:
   build:
     - cmake
-    - gcc
+    - {{ compiler('c') }}
     - libstdcxx-ng
     - libgcc-ng
     - libpng >=1.6.32,<1.6.35
