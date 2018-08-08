@@ -14,20 +14,16 @@ build:
 
 requirements:
   build:
-    - cmake
     - {{ compiler('c') }}
     - {{compiler('cxx')}}
+    - cmake
+
+  host:
     - libstdcxx-ng
     - libgcc-ng
-    - libpng >=1.6.32,<1.6.35
-    # - pyzmq
-    # - zlib
-
-
 
   run:
     - pyzmq
-    - libpng >=1.6.32,<1.6.35
     - libstdcxx-ng
     - libgcc-ng
 
