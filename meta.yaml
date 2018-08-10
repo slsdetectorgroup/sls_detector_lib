@@ -23,6 +23,7 @@ requirements:
     - libstdcxx-ng
     - libgcc-ng
     - pyzmq
+
   run:
     - pyzmq
     - libstdcxx-ng
