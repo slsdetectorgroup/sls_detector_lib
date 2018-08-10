@@ -21,15 +21,13 @@ conda install sls_detector_lib=3.1.4
 
 ```
 
+### Compile locally using conda-build
 
-```
-
-### Compile using conda-build
 ```bash
-#Clone source code
+#Get the source code
 git clone https://github.com/slsdetectorgroup/sls_detector_lib.git
 
-#Checkout the branch needed
+#and checkout the branch you want
 git fetch --all
 git checkout 3.1.4
 
