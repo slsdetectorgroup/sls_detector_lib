@@ -1,10 +1,10 @@
 package:
   name: sls_detector_lib
-  version: "3.2.0rc"
+  version: "3.1.4rc"
 
 
 source:
-  git_rev: 3.2.0-rc
+  git_rev: 3.1.4-rc
   git_url: https://github.com/slsdetectorgroup/slsDetectorPackage.git
 
 build:
