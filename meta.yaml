@@ -32,6 +32,7 @@ requirements:
 
 
 about:
-  home: no
+  home: https://github.com/slsdetectorgroup/sls_detector_lib
   license: GPL2
+  license_file: LICENSE
 
